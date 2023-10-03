@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCryptoData } from './redux/cryptoSlice';
 import CryptoList from './components/CryptoList';
+import CryptoDetails from './components/CryptoDetails';
 
 function App() {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<CryptoList />} />
-        <Route path="/details/:id" element={<div>Detail Page Placeholder</div>} />
+        <Route path="/details/:id" element={<CryptoDetails />} />
       </Routes>
     </Router>
   );
