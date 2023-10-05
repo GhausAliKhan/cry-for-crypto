@@ -21,9 +21,34 @@ export const fetchCryptoDetails = createAsyncThunk(
   },
 );
 
+export const filterCryptos = createAsyncThunk(
+  'crypto/filterCryptos',
+  async (searchQuery, { rejectWithValue }) => {
+    try {
+      const response = await axios.get(
+        `https://api.coincap.io/v2/assets?search=${searchQuery}`,
+      );
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
+  },
+);
+
+export const fetchCryptoHistoricalData = createAsyncThunk(
+  'crypto/fetchCryptoHistoricalData',
+  async (assetId) => {
+    const response = await axios.get(
+      `https://api.coincap.io/v2/assets/${assetId}/history?interval=d1`,
+    );
+    return response.data;
+  },
+);
+
 const initialState = {
   cryptoData: [],
   selectedDetails: null,
+  historicalData: [],
   status: 'idle',
   error: null,
 };
@@ -47,6 +72,20 @@ const cryptoSlice = createSlice({
       })
       .addCase(fetchCryptoDetails.fulfilled, (state, action) => {
         state.selectedDetails = action.payload.data;
+      })
+      .addCase(filterCryptos.pending, (state) => {
+        state.status = 'Loading';
+      })
+      .addCase(filterCryptos.fulfilled, (state, action) => {
+        state.cryptoData = action.payload;
+        state.status = 'Succeeded';
+      })
+      .addCase(filterCryptos.rejected, (state, action) => {
+        state.status = 'Failed';
+        state.error = action.payload;
+      })
+      .addCase(fetchCryptoHistoricalData.fulfilled, (state, action) => {
+        state.historicalData = action.payload.data;
       });
   },
 });
