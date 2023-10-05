@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { clearSelectedDetails } from '../redux/detailSlice';
 import { fetchCryptoData } from '../redux/cryptoSlice';
 import 'font-awesome/css/font-awesome.min.css';
+import '../styles/navbar.css';
 
 const Navbar = () => {
   const dispatch = useDispatch();

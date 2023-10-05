@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #9b980d;
+  color: #fff;
+  border: solid 1px #fff;
+}
+
+.navbar-title {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.left-arrow {
+  cursor: pointer;
+  color: #fff;
+}
+
+i{
+    padding: 0 5px;
+}
