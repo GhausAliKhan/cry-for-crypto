@@ -44,7 +44,7 @@
 
 # Preview 👀 <a name="preview"></a>
 
-![Preview Cry for Crypto]()
+![Preview Cry for Crypto](./src/assets/preview.gif)
 
 <br/>
 
@@ -90,7 +90,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[The project is not yet deployed. Coming Soon!]()
+[Live Demo!](https://cry-for-crypto.vercel.app/)
 
 [Video Walkthrough]()
 
