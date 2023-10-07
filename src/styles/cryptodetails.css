@@ -11,6 +11,7 @@
   align-items: center;
   text-align: center;
   font-size: 1rem;
+  font-family: 'Gill Sans', 'Lato', sans-serif;
 }
 
 .chartDetail {
@@ -18,7 +19,7 @@
 }
 
 .cryptoDetail h3 {
-  background-color: #9b980d;
+  background-color: #4369b2;
 }
 
 .cryptoDetail h3,
@@ -34,11 +35,11 @@
 }
 
 .cryptoDetail p:nth-child(even) {
-  background-color: #eee;
+  background-color: #4369b2;
 }
 
 .cryptoDetail p:nth-child(odd) {
-  background-color: #bbb;
+  background-color: #3b5d9f;
 }
 
 strong {

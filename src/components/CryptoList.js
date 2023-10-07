@@ -45,7 +45,7 @@ const CryptoList = () => {
               key={crypto.id}
               className="coinCard"
               style={{
-                backgroundColor: ((Math.floor(index / 2) + index) % 2 === 0) ? '#eee' : '#bbb',
+                backgroundColor: ((Math.floor(index / 2) + index) % 2 === 0) ? '#4369B2' : '#3B5D9F',
               }}
             >
               <Link to={`/details/${crypto.id}`} className="no-underline">

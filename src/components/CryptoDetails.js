@@ -37,8 +37,8 @@ const CryptoDetails = () => {
         label: 'Price in USD',
         data: historicalData.map((entry) => entry.priceUsd),
         fill: false,
-        backgroundColor: 'rgb(155, 152, 13)',
-        borderColor: 'rgba(106, 104, 9, 0.9)',
+        backgroundColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgba(75, 192, 192, 0.2)',
       },
     ],
   };
