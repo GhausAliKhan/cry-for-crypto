@@ -92,7 +92,7 @@
 
 [Live Demo!](https://cry-for-crypto.vercel.app/)
 
-[Video Walkthrough]()
+[Video Walkthrough](https://www.loom.com/share/62491a2bac3e4645b945c90c947f7778?sid=ffe3f332-75d1-4e0f-9552-1934961d7c2a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
