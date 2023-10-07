@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4369b2;
+  color: #fff;
+  border: solid 1px #fff;
+}
+
+.navbar-title {
+  font-family: 'Gill Sans', 'Lato', sans-serif;
+  letter-spacing: 3px;
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.left-arrow {
+  cursor: pointer;
+  color: #fff;
+}
+
+i {
+  padding: 0 5px;
+}
